@@ -7,16 +7,21 @@
       <PathStyle>RemoteUnix</PathStyle>
     </CustomSourceDirectories>
     <BuildHost>
-      <HostName>192.168.56.3</HostName>
+      <HostName>192.168.1.101</HostName>
       <Transport>SSH</Transport>
-      <UserName>master</UserName>
+      <UserName>root</UserName>
     </BuildHost>
+    <DeploymentHost>
+      <HostName>192.168.1.101</HostName>
+      <Transport>SSH</Transport>
+      <UserName>root</UserName>
+    </DeploymentHost>
     <MainSourceTransferCommand>
       <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
       <RemoteHost>
-        <HostName>192.168.56.3</HostName>
+        <HostName>192.168.1.101</HostName>
         <Transport>SSH</Transport>
-        <UserName>master</UserName>
+        <UserName>root</UserName>
       </RemoteHost>
       <LocalDirectory>$(ProjectDir)</LocalDirectory>
       <RemoteDirectory>/home/master/learn/learn_cpp</RemoteDirectory>

@@ -41,7 +41,7 @@
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="learn_stl.h">
+    <ClInclude Include="learn_stl.hpp">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

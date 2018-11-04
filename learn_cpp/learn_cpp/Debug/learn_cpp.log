@@ -1,4 +1,7 @@
-﻿  VisualGDB: Sending 2 updated source files to build machine...
-  VisualGDB: Run "make  CONFIG=Debug" in directory "/home/master/learn/learn_cpp" on master@192.168.56.3 (SSH)
+﻿  VisualGDB: Run "make  CONFIG=Debug clean" in directory "/home/master/learn/learn_cpp" on root@192.168.1.101 (SSH)
+  rm -rf Debug
+  VisualGDB: Sending 7 updated source files to build machine...
+  VisualGDB: Run "make  CONFIG=Debug" in directory "/home/master/learn/learn_cpp" on root@192.168.1.101 (SSH)
+  mkdir Debug
   g++ -std=gnu++11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c learn_cpp.cpp -o Debug/learn_cpp.o -MD -MF Debug/learn_cpp.dep
   g++ -o Debug/learn_cpp -Wl,-gc-sections    -Wl,--start-group Debug/learn_cpp.o   -Wl,--rpath='$ORIGIN'   -Wl,--end-group
