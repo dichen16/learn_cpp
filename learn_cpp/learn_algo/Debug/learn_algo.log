@@ -1,0 +1,8 @@
+﻿  VisualGDB: Run "make  CONFIG=Debug clean" in directory "/home/master/learn_cpp/learn_algo" on master@192.168.56.3 (SSH)
+  rm -rf Debug
+  VisualGDB: Sending 12 updated source files to build machine...
+  VisualGDB: Run "make  CONFIG=Debug" in directory "/home/master/learn_cpp/learn_algo" on master@192.168.56.3 (SSH)
+  mkdir Debug
+  g++ -std=gnu++11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c learn_algo.cpp -o Debug/learn_algo.o -MD -MF Debug/learn_algo.dep
+  g++ -std=gnu++11 -ggdb -ffunction-sections -O0   -DDEBUG=1  -c LinkedList.cpp -o Debug/LinkedList.o -MD -MF Debug/LinkedList.dep
+  g++ -o Debug/learn_algo -Wl,-gc-sections    -Wl,--start-group Debug/learn_algo.o Debug/LinkedList.o   -Wl,--rpath='$ORIGIN'   -Wl,--end-group
